@@ -1,0 +1,151 @@
+body {
+  background-color: #ececec;
+  font-size: 14px;
+  fill-opacity: .7;
+}
+
+a {
+  /* color: #EF3B3A; */
+  margin-left: 36%;
+  margin-top: 1%;
+  margin-bottom: 3%;
+  font-size: 18px;
+}
+
+.col-border {
+  border-radius: 8px;
+}
+
+.margin-20 {
+  margin: 20px !important;
+}
+
+.bg-color-grey {
+  background-color: #ececec;
+}
+
+.bg-white {
+  background-color: white !important;
+  margin-left: 36%;
+  width:370px;
+}
+.padding-5 {  
+  padding: 40px !important;
+}
+
+.border-0 {
+  border: 0 px !important;
+  border-color: transparent !important;
+}
+
+.shadow-inside {
+  background-color:rgb(252, 248, 248);
+  /* box-shadow: inset 0 0 5px 5px #dfdcdc; */
+}
+
+.green-color {
+  color: rgb(35, 233, 173) !important;
+}
+
+.bg-gray-dark {
+  background: #868e96;
+}
+
+.red-color {
+  color: red !important;
+}
+
+.bg-green {
+  background-color: rgb(110, 217, 160)!important;
+ 
+}
+
+.white-color {
+  color: white !important;
+  margin-left: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+}
+
+.border-radius-4 {
+  border-radius: 4px;
+}
+
+.content-left {
+  padding-left: 9%;
+}
+
+.padding-left-right-10 {
+  padding: 10px 30px;
+}
+
+.color-grey {
+  color: grey !important;
+}
+
+.bg-grey-2 {
+  background-color:rgb(252, 248, 248);;
+}
+
+.bg-white-success{
+  background-color: white !important;
+  /* box-shadow: 2px 0px 10px grey; */
+  margin-left: 26%;
+}
+
+.padding-content{
+  margin-top: 2%;
+  margin-bottom: 5%;
+  margin-left: 12%;
+}
+
+.btn.bg-red{
+  background: #EF3B3A;
+  color:white;
+  margin-bottom: 30px;
+  
+}
+.btn.bg-gray-dark{
+  background: grey;
+  color:white;
+  width:75px;
+  margin-bottom: 30px;
+}
+
+.content-right{
+  color: #9c9c9e;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image-logo{
+   margin-top:40px;
+   margin-left: 35px;
+	 box-sizing: border-box;
+ }
+
+.form-control{
+  border-width: 2.3px;
+  outline: 0;
+  font-size: 14px;
+ }
+
+.footer {
+  margin-top: 80px;
+  text-align: center;
+  font-weight: 50;
+}
+.fa{
+  color:white;
+  font-size: 50px;
+  margin-left: 41%;
+  margin-top: 9%;
+  display: inline-block;
+  border-radius: 60px;
+  /* box-shadow: 0px 0px 2px #888; */
+  padding: 0.5em 0.5em;
+  background: #8bc34a;
+  width: 100px;
+  height: 100px;
+
+}

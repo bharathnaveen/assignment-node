@@ -1,0 +1,19 @@
+extends layout
+
+block content
+ h1= title
+ div
+   table.table.table-hover
+    thead
+        tr
+          th Reference
+          th Description
+          th Error
+    tbody
+      each value in values
+        tr
+          td=value.Reference
+          td=value.Description
+          td=value.error
+ h6.footer Copyright &copy; Cognizant Inc 2019
+  

@@ -1,0 +1,28 @@
+extends layout
+
+block content
+    div.container-fluid.bg-color-grey
+        div.row.padding-5
+        div.col-4
+        div.col-4.justify-content-md-center.bg-white
+            img(src="/images/cognizant-logo.png", class="image-logo",width="270px")
+            br
+            div.row
+                div.col-12.padding-left-right-10
+                    form(enctype='multipart/form-data' method='POST' action='/fileupload')
+                        div.form-group
+                            input.form-control.bg-grey-2.shadow-inside.border-radius-4(
+                                required=true,
+                                name='uploadedFile',
+                                type='file',
+                                id='exampleInputEmail1'
+                               )                       
+                        button.btn.bg-red.white-color.pull-right(type="submit" id="submit" name="submit")
+                            h7  Submit
+
+                        button.btn.bg-gray-dark.white-color.pull-right(type="reset")
+                            h7 Reset    
+    h6.footer Copyright &copy; Cognizant Inc 2019
+
+             
+                                        
