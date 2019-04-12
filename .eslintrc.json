@@ -1,6 +1,8 @@
 {
     "extends": "airbnb-base",
     "rules": {
+        "consistent-return": 0,
+        "no-underscore-dangle": 0,
         "dot-notation": 0
     }
 }
