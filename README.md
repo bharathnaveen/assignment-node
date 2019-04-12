@@ -16,7 +16,7 @@ Once the source code cloned redirect into root path and type
 Usage
 ==================
 Once all dependency files installed and type
-```node server.js``` 
+```npm run go``` 
 Visit ```localhost:3000``` to view the app.
 
 
