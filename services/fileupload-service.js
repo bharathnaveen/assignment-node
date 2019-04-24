@@ -7,20 +7,19 @@ const convert = require("xml-js");
 const FileUpload = file => {
   return new Promise(resolve => {
     let records = [];
+    let finalRecords;
     if (file.name.indexOf(".xml") !== -1) {
       // XML File Validations
       const data = file.data.toString();
-      records = JSON.parse(convert.xml2json(data, { compact: true, spaces: 4 }))
-        .records.record;
-      const transformed = records.map(key => ({
+      records = JSON.parse(convert.xml2json(data, { compact: true, spaces: 4 })).records.record;
+      const renameKeyAttribute = records.map(key => ({
         Reference: key._attributes.reference,
         Start_Balance: key.startBalance._text,
         Mutation: key.mutation._text,
         End_Balance: key.endBalance._text,
         Description: key.description._text
       }));
-      const finalValue = uniqueValidation(transformed);
-      return resolve(finalValue);
+      finalRecords = uniqueValidation(renameKeyAttribute);
     } else if (file.name.indexOf(".csv")) {
       // CSV File Validations
       const rows = file.data
@@ -50,9 +49,9 @@ const FileUpload = file => {
           records.push(record);
         }
       }
-      const finalValue = uniqueValidation(records);
-      return resolve(finalValue);
+      finalRecords = uniqueValidation(records);
     }
+    return resolve(finalRecords);
   });
 };
 /*
