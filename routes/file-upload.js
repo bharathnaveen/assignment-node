@@ -16,8 +16,9 @@ router.post('/', async (req, res) => {
       values: errorRecords,
     });
   } catch (err) {
-    return res.render('upload-success', {
-      title: 'Oops Something went wrong',
+    return res.render('index', {
+      messages: 'Invalid file. Please import vaild file.',
+      values: []
     });
   }
 });

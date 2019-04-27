@@ -93,6 +93,9 @@ const uniqueValidation = records => {
       });
     }
   }
+  if (errorRecords == 0) {
+    return res.render('index', { messages: 'Invalid file. Please import vaild file.', values: [] });
+  }
   return errorRecords;
 }
 

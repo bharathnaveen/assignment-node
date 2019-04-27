@@ -8,6 +8,8 @@ block content
             img(src="/images/Rabobank.png", class="image-logo",width="270px")
             hr
             h6.header-align Upload only .xml and .csv file format
+            if(messages)
+                h6.header-align.alert-msg #{messages}
             div.row
                 div.col-12.padding-left-right-10
                     form(enctype='multipart/form-data' method='POST' action='/fileupload')
